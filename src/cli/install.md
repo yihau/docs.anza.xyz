@@ -19,28 +19,16 @@ on your preferred workflow:
 
 - Open your favorite Terminal application
 
-- Install the Agave release
-  [LATEST_AGAVE_RELEASE_VERSION](https://github.com/anza-xyz/agave/releases/tag/LATEST_AGAVE_RELEASE_VERSION)
-  on your machine by running:
+- Install the Agave release `AGAVE_RELEASE_TAG` on your machine by running:
 
 ```bash
-sh -c "$(curl -sSfL https://release.anza.xyz/LATEST_AGAVE_RELEASE_VERSION/install)"
+sh -c "$(curl -sSfL https://release.anza.xyz/AGAVE_RELEASE_TAG/install)"
 ```
 
-- You can replace `LATEST_AGAVE_RELEASE_VERSION` with the release tag matching
-  the software version of your desired release, or use one of the three symbolic
-  channel names: `stable`, `beta`, or `edge`.
-
-- The following output indicates a successful update:
-
-```text
-downloading LATEST_AGAVE_RELEASE_VERSION installer
-Configuration: /home/solana/.config/solana/install/config.yml
-Active release directory: /home/solana/.local/share/solana/install/active_release
-* Release version: LATEST_AGAVE_RELEASE_VERSION
-* Release URL: https://github.com/anza-xyz/agave/releases/download/LATEST_AGAVE_RELEASE_VERSION/solana-release-x86_64-unknown-linux-gnu.tar.bz2
-Update successful
-```
+You can replace `AGAVE_RELEASE_TAG` with the
+[release tag](https://github.com/anza-xyz/agave/tags) matching the software
+version of your desired release, or use one of the three symbolic channel
+names: `stable`, `beta`, or `edge`.
 
 - Depending on your system, the end of the installer messaging may prompt you to
 
@@ -74,7 +62,7 @@ solana --version
   installer into a temporary directory:
 
 ```bash
-cmd /c "curl https://release.anza.xyz/LATEST_AGAVE_RELEASE_VERSION/agave-install-init-x86_64-pc-windows-msvc.exe --output C:\agave-install-tmp\agave-install-init.exe --create-dirs"
+cmd /c "curl https://release.anza.xyz/AGAVE_RELEASE_TAG/agave-install-init-x86_64-pc-windows-msvc.exe --output C:\agave-install-tmp\agave-install-init.exe --create-dirs"
 ```
 
 - Copy and paste the following command, then press Enter to install the latest
@@ -82,7 +70,7 @@ cmd /c "curl https://release.anza.xyz/LATEST_AGAVE_RELEASE_VERSION/agave-install
   to allow the program to run.
 
 ```bash
-C:\agave-install-tmp\agave-install-init.exe LATEST_AGAVE_RELEASE_VERSION
+C:\agave-install-tmp\agave-install-init.exe AGAVE_RELEASE_TAG
 ```
 
 - When the installer is finished, press Enter.
